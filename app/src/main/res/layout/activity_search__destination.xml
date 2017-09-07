@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dd.pc.marta_speed.Search_Destination">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="384dp"
+        android:layout_height="88dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/marta_logo"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-14dp" />
+
+    <EditText
+        android:id="@+id/etDestination"
+        android:layout_width="334dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Destination"
+        android:inputType="textAutoComplete|textPersonName"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <SearchView
+        android:layout_width="36dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="348dp"
+        tools:layout_editor_absoluteY="88dp">
+
+    </SearchView>
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="android.app.ListFragment"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        style="@android:style/Widget.Material.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="43dp"
+        android:ems="1"
+        android:inputType="none"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:text="SPEED"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="black"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <ScrollView
+        android:layout_width="372dp"
+        android:layout_height="359dp"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="136dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etAlerts"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="1dp"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="textCapCharacters|textCapWords"
+                android:text="Alerts"
+                android:textAppearance="@android:style/TextAppearance.Material.Display1" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
